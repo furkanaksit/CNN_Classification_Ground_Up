@@ -2,7 +2,7 @@
 """
 Created on Sun Dec 23 17:41:55 2018
 
-@author: cagri
+@author: furkan - cagri
 """
 import numpy as np
 def convolution(images,filter):
