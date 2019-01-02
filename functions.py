@@ -32,3 +32,15 @@ def reLU(images):
     return reLU_output     
 
 
+def Pooling(images):
+    # takes the max value of every 2 by 2 matrix in the image and makes a new image from them
+    # with this we aim to make the image smaller while keeping the important data and removing 
+    # unnecessary data
+    
+    out_pool = np.zeros((int(images.shape[0]/2), int(images.shape[1]/2), images.shape[2]))
+    
+    for k in range(images.shape[2]):  
+        for i in range(0, images.shape[0]-2, 2):
+            for j in range(0, images.shape[1]-2, 2):
+                out_pool[int(i/2), int(j/2), k] = images[i:i+2, j:j+2, k].max()
+    return out_pool
