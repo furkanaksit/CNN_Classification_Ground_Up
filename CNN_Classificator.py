@@ -269,6 +269,25 @@ score = loaded_model.evaluate(test, encoded_test, verbose=0)
 print("%s: %.2f%%" % (loaded_model.metrics_names[0], score[0]*100))
 print("%s: %.2f%%" % (loaded_model.metrics_names[1], score[1]*100))
 
+#%%
+# after the test data we use our own data that we found online to calculate
+# the accuracy ith foreign data 
+
+test_self =[]
+for filename in os.listdir('./test_self_images'):
+        path = './test_self_images' + '/' + filename
+        test_self.append(resize(io.imread(path), (200, 200,3),anti_aliasing=True))
+test_self = np.array(test_self).reshape(-1,200,200,3)
+total_answ = 0
+for i in range(len(test_self)):
+    plt.imshow(test_self[i])
+    plt.title(image_dataset[0][loaded_model.predict_classes(test_self[i][np.newaxis,:])])
+    plt.show()
+    answ = int(input("1 for true, 0 for wrong -- "))
+# we count the number of true images and compare it with 
+# the total number of images to calculate the percentage of accuracy
+    total_answ += answ
+print("accurracy is " + str(float(total_answ/len(test_self))*100)+"%" )
 
     
 
