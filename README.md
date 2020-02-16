@@ -1,6 +1,8 @@
 # CNN_Classification_Ground_Up
 Update: Neural Network Algorithm has been implemented in Neural Network Course and Keras part of the code has updated to our own dense and activation layer, forward and backpropogation, train and test functions. New version will be uploaded soon.
 ---
+Update2: Apparantly we have learned a lot after this homework. Cagri Kilic and I worked for 6 months in the same company. We had developed several Computer Vision proof of concept projects using Matrox Imaging Library and Tensorflow API. We learned the core concepts of machine learning, deep learning and computer vision like we hoped before. We had taken Neural Networks, Statistical Data Processing, Data Mining courses along the way and now we are working on a autonomous car project using Deep Q Learning for our semester project. We have not much time to beautify the code and upload the codes for our projects. Several projects are on the way. Stay tuned.
+---
 
 Image Classification using Convolutional Neural Network
 -------------------------------------------------------
