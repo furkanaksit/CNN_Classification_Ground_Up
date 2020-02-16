@@ -34,5 +34,5 @@ Update 1 : We found out that we have to use Tensorflow and Keras libraries to ma
    
   * Use test data to approximate the success
   
-Starting to code without any knowledge of deeplearning we will learn along the way
+Starting to code without any knowledge of deeplearning. We will learn along the way.
 
