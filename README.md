@@ -1,4 +1,6 @@
 # CNN_Classification_Ground_Up
+Update: Neural Network Algorithm has been implemented in Neural Network Course and Keras part of the code has updated to our own dense and activation layer, forward and backpropogation, train and test functions. New version will be uploaded soon.
+---
 
 Image Classification using Convolutional Neural Network
 -------------------------------------------------------
